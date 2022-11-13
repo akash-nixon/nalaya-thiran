@@ -302,21 +302,12 @@
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
 </div>
-
-<div style="margin-top: 36%; margin-left: 80%;">
-  <div style="margin-left: 50%;">
-    <button class="close">X Close</button>
-  </div>
-  <ul class="wrapper" >
-    <li class="icon facebook" style="margin-left: 300px;">
-      <span class="tooltip">ChatBot</span>
-      <img src="assets/icon.png">
-      <span><i class="fab fa-facebook-f" onclick="toggle()"></i></span>
-    </li>
-
-  </ul>
+<body style="height: 695px">
+<div>
+  <h1 style="text-align: center;font-size: 70px">Bank Of India
+  </h1>
 </div>
-
+</body>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -326,19 +317,7 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <router-outlet></router-outlet>
-<script>
-  window.watsonAssistantChatOptions = {
-    integrationID: "e9dc8346-7c82-45c0-b801-acece560ab06", // The ID of this integration.
-    region: "us-south", // The region your integration is hosted in.
-    serviceInstanceID: "dd5c877a-27a8-4d42-997d-a6fd376ec9aa", // The ID of your service instance.
-    onLoad: function(instance) { instance.render(); }
-  };
-  setTimeout(function(){
-    const t=document.createElement('script');
-    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-  });
-</script>
+
 <style>
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
